@@ -42,7 +42,7 @@ public class EventInfoMail {
                 case 12:
                 case 1:
                 case 2:
-                    System.out.println("한파의 연속인 1월 입니다.");
+                    System.out.println("한파의 연속인 " + month + "월 입니다.");
                     break;
                 case 4:
                     System.out.println("새싹이 피어나는 4월 입니다");

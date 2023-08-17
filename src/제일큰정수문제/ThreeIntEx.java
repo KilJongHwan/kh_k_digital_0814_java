@@ -11,13 +11,9 @@ public class ThreeIntEx {
         int b = (x / 10) % 10;
         int c = x % 10;
         int y = 0;
-        if (a >= b && a >= c){
-            y = a;
-        } else if (b >= a && b >= c) {
-            y = b;
-        } else if (c >= a && c >= b) {
-            y = c;
-        }
+        if (a >= b && a >= c) y = a;
+        else if (b >= a && b >= c) y = b;
+        else y = c;
 
         System.out.println("가장 큰 수는 " + y + "입니다.");
     }

@@ -11,17 +11,17 @@ public class TestEx {
             System.out.print("시험 점수를 입력 하세요 : ");
             int score = sc.nextInt();
             if(score <= 0 || score >= 100) continue;
-                if (90 <= score)
-                    System.out.println(score + "점은 A 입니다.");
-                else if (80 <= score)
-                    System.out.println(score + "점은 B 입니다.");
-                else if (70 <= score)
-                    System.out.println(score + "점은 C 입니다.");
-                else if (60 <= score)
-                    System.out.println(score + "점은 D 입니다.");
-                else
-                    System.out.println(score + "점은 F 입니다");
-                break;
+            if (90 <= score)
+                System.out.println(score + "점은 A 입니다.");
+            else if (80 <= score)
+                System.out.println(score + "점은 B 입니다.");
+            else if (70 <= score)
+                System.out.println(score + "점은 C 입니다.");
+            else if (60 <= score)
+                System.out.println(score + "점은 D 입니다.");
+            else
+                System.out.println(score + "점은 F 입니다");
+            break;
         }
     }
 }
