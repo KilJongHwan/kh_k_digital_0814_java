@@ -17,7 +17,6 @@ public class BitOperator {
         System.out.println(num1 << 1);
         System.out.println(num1 >> 2);
         System.out.println(~num2);
-
-
+        System.out.println(num1);
     }
 }
