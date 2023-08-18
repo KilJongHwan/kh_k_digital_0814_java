@@ -14,7 +14,7 @@ public class SquareOutput {
         int cnt = 1;
         for (int i = 0; i < 3; i++){
             for (int j = 1; j <= n; j++){
-                System.out.printf("%3d", cnt);
+                System.out.printf("%4d", cnt);
                 cnt++;
             }
             System.out.println();
