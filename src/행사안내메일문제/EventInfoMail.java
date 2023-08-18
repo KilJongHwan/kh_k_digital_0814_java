@@ -28,51 +28,33 @@ public class EventInfoMail {
         System.out.print("제목을 입력하세요 : ");
         String title = sc.next();
         System.out.print("날짜를 입력하세요 : ");
-        String ym = sc.next();
+        String date = sc.next();
         System.out.print("시간을 입력하세요 : ");
         String time = sc.next();
-        if(ym.length() > 8){
+        if(date.length() > 8)
             System.out.println("날짜범위를 넘어갔습니다.");
-        }
         else{
-            String a = ym.substring(4,6);
-            System.out.println("이름 : " + name + "제목 : "+ title + "날짜 : " + ym + "시간 : " + time);
+            String a = date.substring(4,6);
             int month = Integer.parseInt(a);
             switch (month){
                 case 12:
                 case 1:
-                case 2:
-                    System.out.println("한파의 연속인 " + month + "월 입니다.");
-                    break;
-                case 4:
-                    System.out.println("새싹이 피어나는 4월 입니다");
-                    break;
-                case 5:
-                    System.out.println("계절의 여왕 5월 입니다.");
-                    break;
-                case 6:
-                    System.out.println("활동하기 좋은 6월 입니다.");
-                    break;
-                case 7:
-                    System.out.println("휴가가 기다려지는 7월 입니다");
-                    break;
-                case 8:
-                    System.out.println("무더운 8월 입니다.");
-                    break;
-                case 9:
-                    System.out.println("선선한 9월 입니다.");
-                    break;
-                case 10:
-                    System.out.println("천고마비의 계절 10월 입니다");
-                    break;
-                case 11:
-                    System.out.println("쓸쓸한 늦가을 11월 입니다.");
-                    break;
-                default:
-                    System.out.println("잘못된 날짜를 입력되서 오류가 발생하였습니다");
-                    break;
+                case 2: System.out.println("한파의 연속인 " + month + "월 입니다."); break;
+                case 4: System.out.println("새싹이 피어나는 4월 입니다"); break;
+                case 5: System.out.println("계절의 여왕 5월 입니다."); break;
+                case 6: System.out.println("활동하기 좋은 6월 입니다."); break;
+                case 7: System.out.println("휴가가 기다려지는 7월 입니다");  break;
+                case 8: System.out.println("무더운 8월 입니다."); break;
+                case 9: System.out.println("선선한 9월 입니다."); break;
+                case 10: System.out.println("천고마비의 계절 10월 입니다"); break;
+                case 11: System.out.println("쓸쓸한 늦가을 11월 입니다."); break;
+                default: System.out.println("잘못된 날짜를 입력되서 오류가 발생하였습니다"); break;
             }
         }
-
+        System.out.println("아래와 일정으로 [제목]를 진행하고자 하오니 오셔서 자리를 빛내 주시기 바랍니다.");
+        System.out.println("===== 행사 안내 =====");
+        System.out.println("행사 안내 : " + title);
+        System.out.println("일시 : " + date.substring(0,3) +"년" + date.substring(4,6) +"월" + date.substring(6,7) + "일");
+        System.out.println("시간 : " + time);
     }
 }
