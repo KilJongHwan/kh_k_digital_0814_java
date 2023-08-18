@@ -40,6 +40,25 @@ public class MemberInfo {
         }
     }
     public void setJobs(){
+        while(true){
+            System.out.print("직업을 입력하세요 : ");
+            jobs = sc.nextInt();
+            if (jobs > 0 && jobs < 5) break;
+            System.out.print("직업을 잘 못 입력 했습니다.");
+        }
+    }
+    public int getGenderType(){
+        if(gender == 'M' || gender == 'm') return 1;
+        else return 2;
+    }
 
+    public void getInfo(){
+        String[] genderStr = {"", "Male", "Female"};
+        String[] jobsStr = {"", "학생", "회사원", "주부", "무직"};
+        System.out.println("=".repeat(5) + "회원 정보" + "=".repeat(5));
+        System.out.println("이름 : " + name);
+        System.out.println("나이 : " + age);
+        System.out.println("성별 : " + genderStr[getGenderType()]);
+        System.out.println("직업 : " + jobsStr[jobs]);
     }
 }
