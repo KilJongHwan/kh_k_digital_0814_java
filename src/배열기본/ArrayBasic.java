@@ -1,4 +1,7 @@
 package 배열기본;
+
+import java.util.Arrays;
+
 // 자바의 배열은 동일한 데이터 요소들을 연속적으로 저장하는 자료 구조
 // 인덱스를 사용해서 각 요소를 접근 할 수 있다. (인덱스 0부터 시작)
 // 배열은 크기를 먼저 지정 해야 한다.
@@ -29,10 +32,17 @@ public class ArrayBasic {
         grade4[3] = 55;
         int sum =0;
         for (int a:grade4) {
+            a += 10;
             System.out.println(a + " ");
             sum += a;
         }
         System.out.println("총점은 : " + sum);
         System.out.printf("평균은 : %.2f\n", (double)sum / grade4.length);
-    }
+        sum = 0;
+        for (int i = 0; i < grade4.length; i++){
+            System.out.println(grade4[i] + " ");
+            sum += grade4[i];
+        }
+        System.out.println("총점은 : " + sum);
+        System.out.printf("평균은 : %.2f\n", (double)sum / grade4.length);    }
 }
