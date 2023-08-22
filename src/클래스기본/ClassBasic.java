@@ -8,7 +8,7 @@ public class ClassBasic {
         s1.showInfo();
         Student s2 = new Student();
         s2.setName("Kane");
-        s2.setAddr("Brazil");
+        s2.setAddr("canberra");
         s2.showInfo();
         Student s3 = new Student();
         s3.setName("Yuki");
