@@ -15,6 +15,9 @@ public class PrimeSum {
         for (int i = 2; i <= N; i++){
             sum += prime(i);
         }
+        for (int e : prime2(N)){
+            System.out.println(e);
+        }
         System.out.println(sum);
     }
     static int prime(int s){
@@ -25,5 +28,21 @@ public class PrimeSum {
         }
         if (t) result = s;
         return result;
+    }
+
+    static int[] prime2(int a){
+        int result[] = new int[a];
+        boolean isPrime;
+        int b = 2;
+        while (true){
+            isPrime =true;
+            for (int i = 2; i < a; i++){
+                if(b % i == 0) isPrime = false; break;
+            }
+            if(isPrime) result[b] = b;
+            if (b >= a) break;
+            b++;
+        }
+        return  result;
     }
 }
