@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import static java.lang.Thread.sleep;
+import static 아이패드만들기.Common.*;
 
 public class IPadPro {
     int screen; // 11inch , 12.9inch
@@ -93,15 +94,12 @@ public class IPadPro {
         }
     }
     void productPad(){
-        final String[] screenType = {"", "11inch","12.9inch"};
-        final String[] colorType = {"", "Space Gray", "Silver"};
-        final String[] memType = {"", "128GB", "256GB", "512GB", "1TB"};
-        final String[] netType = {"", "Wi-Fi", "Wi-Fi + Cellular"};
+
         System.out.println("=".repeat(5)+"iPad Pro Spec" + "=".repeat(5));
         System.out.println("Display : " + screenType[screen]);
         System.out.println("Color : " + colorType[color]);
         System.out.println("Capacity : " + memType[memory]);
-        System.out.println("Network : " + memType[network]);
+        System.out.println("Network : " + netType[network]);
         System.out.println("Name : " + name);
         System.out.println("Serial Number : " + serialNum);
         System.out.println("-".repeat(40));
