@@ -7,7 +7,7 @@ public class HomeAddressEx {
     public static void main(String[] args) {
         String[] N = new String[4];
         Scanner sc = new Scanner(System.in);
-        char[] S = new char[10];
+        char[] S;
         for (int i = 0; i < N.length; i++)
         {
             N[i] = sc.nextLine();
