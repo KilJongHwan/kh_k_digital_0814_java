@@ -12,6 +12,7 @@ public class CocoaMain {
         int sel = sc.nextInt();
         if (sel == 1) adapter = new WiFi();
         else adapter = new FiveG();
+        adapter.connect();
         cocoaTalk.send(adapter);
     }
 }

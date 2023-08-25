@@ -6,7 +6,7 @@ public interface NetAdapter {
     void connect();
     void send(String msg);
 }
-class WiFi implements NetAdapter{
+class WiFi implements NetAdapter {
 
     @Override
     public void connect() {
@@ -14,10 +14,10 @@ class WiFi implements NetAdapter{
     }
     @Override
     public void send(String msg){
-        System.out.println("Wi-Fi  >> " + msg);
+        System.out.println("Wi-Fi >> " + msg);
     }
 }
-class FiveG implements NetAdapter{
+class FiveG implements NetAdapter {
 
     @Override
     public void connect() {
