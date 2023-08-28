@@ -24,7 +24,7 @@ public  abstract class Car {
         if (inCount % ableSeat == 0) inCount++;
         int resume = fuelConsumed * ((inCount) * fuelCost);
         count = ((inCount * dis) / fuelEfficiency) / fuelTankSize;
-        if (count % 3 == 0 ) count++;
+        if (count % fuelEfficiency != 0 ) count++;
         fullDis = (double) (dis * count) / speed;
         int totalDis = dis * inCount; //
         int totalHours = totalDis / speed;
