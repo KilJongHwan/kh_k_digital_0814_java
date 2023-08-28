@@ -23,7 +23,7 @@ public  abstract class Car {
         inCount = input / ableSeat;
         if (inCount % ableSeat == 0) inCount++;
         int resume = fuelConsumed * ((inCount) * fuelCost);
-        count = ((inCount * dis) / fuelEfficiency) /fuelTankSize;
+        count = ((inCount * dis) / fuelEfficiency) / fuelTankSize;
         if (count % 3 == 0 ) count++;
         fullDis = (double) (dis * count) / speed;
         int totalDis = dis * inCount; //
@@ -31,17 +31,6 @@ public  abstract class Car {
         hour = (totalDis/ speed);
         minute = ((totalHours - speed) * 60);
         return resume;
-    }
-    int getMovingCnt(int passCnt){
-        if(passCnt % ableSeat !=  0) return (passCnt / ableSeat) + 1;
-        return  passCnt / ableSeat;
-    }
-    int getRefuelCnt(int dist, int moveCnt){
-        if (((dist * moveCnt) / fuelEfficiency) % fuelEfficiency != 0) return (((dist * moveCnt) / fuelEfficiency) / fuelTankSize) + 1;
-        return ((dis * moveCnt) / fuelEfficiency) / fuelTankSize;
-    }
-    int getTotalCost(int dist, int moveCnt){
-        return  dist / fuelEfficiency * 2000 * moveCnt;
     }
     String getMovingTime(int dist, int movingCnt){
         double getTime = (double) dist * movingCnt / speed;
@@ -66,5 +55,16 @@ public  abstract class Car {
 
     public void setDis(int dis) {
         this.dis = dis;
+    }
+    int getMovingCnt(int passCnt){
+        if(passCnt % ableSeat !=  0) return (passCnt / ableSeat) + 1;
+        return  passCnt / ableSeat;
+    }
+    int getRefuelCnt(int dist, int moveCnt){
+        if (((dist * moveCnt) / fuelEfficiency) % fuelEfficiency != 0) return (((dist * moveCnt) / fuelEfficiency) / fuelTankSize) + 1;
+        return ((dis * moveCnt) / fuelEfficiency) / fuelTankSize;
+    }
+    int getTotalCost(int dist, int moveCnt){
+        return  dist / fuelEfficiency * 2000 * moveCnt;
     }
 }
