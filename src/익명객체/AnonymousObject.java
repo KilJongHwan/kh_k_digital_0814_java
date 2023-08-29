@@ -13,7 +13,7 @@ class Parent{
     }
 }
 class A{
-    Parent field = new Parent() {
+    Parent field = new Parent() {   // 익명의 자식 클래스 생성
         int childField;
         void methodChild(){}
         @Override

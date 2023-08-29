@@ -6,5 +6,13 @@ public class SmartMain {
         smartPhone.setPower(true);
         smartPhone.internet();
         smartPhone.call();
+
+        Phone phone = new Phone("Mock-Up") {
+            @Override
+            void call() {
+                System.out.println("Mock-Up Phone 이라서 전화가 불가능 합니다.");
+            }
+        };
+        phone.call();
     }
 }

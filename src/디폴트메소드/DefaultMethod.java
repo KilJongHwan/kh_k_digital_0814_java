@@ -20,5 +20,23 @@ public class DefaultMethod {
             rc.setVolume(30);
             rc.setMute(false);
         }
+        RemoteControl playStation = new RemoteControl() {
+            @Override
+            public void turnON() {
+                System.out.println("playStation ON");
+            }
+
+            @Override
+            public void turnOff() {
+                System.out.println("playStation OFF");
+            }
+
+            @Override
+            public void setVolume(int vol) {
+
+            }
+        };
+        playStation.turnON();
+        playStation.turnOff();
     }
 }
