@@ -10,8 +10,8 @@ public class ArraysClass {
     public static void main(String[] args) {
         Integer[] arr = {5, 3, 4, 7, 8, 9, 2, 1};   // Collections 프레임 워크 사용 하기 위해 참조 타입인 Integer 배열 사용
 //        Arrays.sort(arr); // 오름 차순 정렬
-//        Arrays.sort(arr, Collections.reverseOrder());   // 내림 차순 정렬
-//        for (int a : arr) System.out.println(a);
+        Arrays.sort(arr, Collections.reverseOrder());   // 내림 차순 정렬
+        for (int a : arr) System.out.println(a);
         // 정렬 오버라이딩 : 재정의
     }
 }
