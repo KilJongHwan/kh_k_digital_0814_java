@@ -19,5 +19,8 @@ public class StringToken {
         for(String e : nameLis){
             System.out.print(e + " ");
         }
+        String s = new String();
+        Class c = s.getClass();
+        System.out.println(c);
     }
 }
