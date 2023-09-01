@@ -22,7 +22,7 @@ public class MicrowaveEx {
                     t = B / 10;
                     if (t % 10 != 0) {
                         System.out.println(-1);
-                        System.exit(0);
+                        return;
                     }
                 }
             }
