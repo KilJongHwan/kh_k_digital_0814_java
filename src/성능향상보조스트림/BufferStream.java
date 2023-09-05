@@ -37,7 +37,7 @@ public class BufferStream {
         bos.flush();
         end = System.currentTimeMillis();
         fos.close(); bis.close(); fis.close();
-        System.out.println("성능향상 보조 스트림을 사용하지 않은 경우 : " + (end - start) + "ms");
+        System.out.println("성능향상 보조 스트림을 사용한 경우 : " + (end - start) + "ms");
 
     }
 }
