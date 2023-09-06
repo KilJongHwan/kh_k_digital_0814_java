@@ -31,10 +31,10 @@ public class CoffeeMenuList {
                 case 1:
                     System.out.println("=".repeat(10) + "메뉴 보기" + "=".repeat(10));
                     for(String e : map.keySet()){
-                        System.out.println("메뉴 : " + map.get(e).name);
-                        System.out.println("가격 : " + map.get(e).price);
-                        System.out.println("분류 : " + map.get(e).category);
-                        System.out.println("설명 : " + map.get(e).description);
+                        System.out.println("메뉴 : " + map.get(e).getName());
+                        System.out.println("가격 : " + map.get(e).getPrice());
+                        System.out.println("분류 : " + map.get(e).getCategory());
+                        System.out.println("설명 : " + map.get(e).getDescription());
                         System.out.println("-".repeat(28));
                     }
                     break;
@@ -43,10 +43,10 @@ public class CoffeeMenuList {
                     key = sc.next();
                     // 포함 여부를 확인하는 메소드 containsKey(key) : map 내에 해당 key 있는지 확인하여 결과를 반환
                     if (map.containsKey(key)){
-                        System.out.println("메뉴 : " + map.get(key).name);
-                        System.out.println("가격 : " + map.get(key).price);
-                        System.out.println("분류 : " + map.get(key).category);
-                        System.out.println("설명 : " + map.get(key).description);
+                        System.out.println("메뉴 : " + map.get(key).getName());
+                        System.out.println("가격 : " + map.get(key).getPrice());
+                        System.out.println("분류 : " + map.get(key).getCategory());
+                        System.out.println("설명 : " + map.get(key).getDescription());
                     }else System.out.println("해당 메뉴가 존재하지 않습니다.");
                     break;
                 case 3:
