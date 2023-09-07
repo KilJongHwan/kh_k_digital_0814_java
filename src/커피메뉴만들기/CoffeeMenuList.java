@@ -94,7 +94,6 @@ public class CoffeeMenuList {
                     break;
                 case 6:
                     System.out.println("메뉴를 종료 합니다.");
-                    System.exit(0); // 강제 종료
                     FileOutputStream fos = new FileOutputStream("src/커피메뉴만들기/coffee.bin");
                     ObjectOutputStream oos = new ObjectOutputStream(fos);
                     oos.writeObject(map);

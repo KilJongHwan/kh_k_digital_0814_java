@@ -1,6 +1,8 @@
 package 커피메뉴만들기;
 
-public class MenuInfo {
+import java.io.Serializable;
+
+public class MenuInfo implements Serializable {
     String name;  // 메뉴명
     int price;      // 가격
     String category;// 분류
